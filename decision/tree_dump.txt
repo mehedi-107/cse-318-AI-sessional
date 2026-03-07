@@ -1,0 +1,23 @@
+Decision Tree Dump:
+[Num]  A2 ≤ 4.4  (maj=Iris-virginica)
+  [Num]  A3 ≤ 0.3  (maj=Iris-setosa)
+    [Leaf] class = Iris-setosa
+    else
+    [Num]  A1 ≤ 3.1  (maj=Iris-versicolor)
+      [Leaf] class = Iris-versicolor
+      else
+      [Leaf] class = Iris-setosa
+  else
+  [Num]  A3 ≤ 1.8  (maj=Iris-virginica)
+    [Num]  A1 ≤ 3.1  (maj=Iris-versicolor)
+      [Num]  A0 ≤ 6.2  (maj=Iris-versicolor)
+        [Leaf] class = Iris-versicolor
+        else
+        [Leaf] class = Iris-virginica
+      else
+      [Num]  A0 ≤ 7  (maj=Iris-versicolor)
+        [Leaf] class = Iris-versicolor
+        else
+        [Leaf] class = Iris-virginica
+    else
+    [Leaf] class = Iris-virginica

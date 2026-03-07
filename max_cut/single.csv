@@ -1,0 +1,2 @@
+Name,|V| or n,|E| or m,Simple Randomized or Randomized-1,Simple Greedy or Greedy-1,Semi-greedy-1,Simple local or local-1 - No. of iterations,Simple local or local-1 - Average value,GRASP-1 - No. of iterations,GRASP-1 - Best value,Known best solution or upper bound
+G1,800,19176,9600,10956,11271,5,11436,5,11470(0.9),0

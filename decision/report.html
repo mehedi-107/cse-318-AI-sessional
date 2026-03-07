@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree Analysis Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #666;
+            margin-top: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #888;
+            margin-top: 25px;
+        }
+        .figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .figure img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .figure-caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        .author-info {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Decision Tree Analysis Report</h1>
+    <div class="author-info">
+        <p><strong>Student Name</strong></p>
+        <p>Date: January 2025</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This report presents the analysis of decision tree algorithms implemented using the ID3 algorithm and its variants. The analysis covers different splitting criteria and their performance on two datasets: Adult and Iris.</p>
+
+    <h2>2. Implementation Details</h2>
+    <p>The decision tree implementation includes:</p>
+    <ul>
+        <li>ID3 algorithm with recursive tree building</li>
+        <li>Three splitting criteria: Information Gain (IG), Information Gain Ratio (IGR), and Normalized Weighted Information Gain (NWIG)</li>
+        <li>Support for both numerical and categorical attributes</li>
+        <li>Missing value handling using mode replacement</li>
+        <li>Depth control mechanism</li>
+    </ul>
+
+    <h2>3. Experimental Setup</h2>
+    <ul>
+        <li>Datasets: Adult dataset and Iris dataset</li>
+        <li>Train/Test split: 80/20 random split</li>
+        <li>Number of trials: 20 repetitions for statistical significance</li>
+        <li>Depth variations: 1 to 10 levels</li>
+        <li>Splitting criteria: IG, IGR, NWIG</li>
+    </ul>
+
+    <h2>4. Results and Analysis</h2>
+
+    <h3>4.1 Accuracy by Splitting Criteria</h3>
+    <p>Figure 1 shows the performance comparison of different splitting criteria across both datasets.</p>
+    <div class="figure">
+        <img src="accuracy_by_criterion.png" alt="Accuracy by Criterion">
+        <div class="figure-caption">Figure 1: Accuracy comparison across different splitting criteria</div>
+    </div>
+    <p>The results show that different criteria perform differently on different datasets. Information Gain Ratio (IGR) generally provides more stable performance by avoiding bias toward attributes with many values.</p>
+
+    <h3>4.2 Effect of Tree Depth</h3>
+    <p>Figure 2 demonstrates how tree depth affects classification accuracy.</p>
+    <div class="figure">
+        <img src="accuracy_by_depth.png" alt="Accuracy by Depth">
+        <div class="figure-caption">Figure 2: Accuracy vs Tree Depth</div>
+    </div>
+    <p>The analysis reveals that deeper trees generally achieve higher accuracy up to a certain point, after which overfitting may occur.</p>
+
+    <h3>4.3 Depth Effect Analysis</h3>
+    <p>Figure 3 provides a detailed view of how depth affects performance across different criteria.</p>
+    <div class="figure">
+        <img src="depth_effect_analysis.png" alt="Depth Effect Analysis">
+        <div class="figure-caption">Figure 3: Detailed depth effect analysis</div>
+    </div>
+
+    <h3>4.4 Complexity vs Accuracy Trade-off</h3>
+    <p>Figure 4 shows the relationship between tree complexity and accuracy.</p>
+    <div class="figure">
+        <img src="complexity_vs_accuracy.png" alt="Complexity vs Accuracy">
+        <div class="figure-caption">Figure 4: Tree complexity vs accuracy trade-off</div>
+    </div>
+    <p>This analysis helps identify the optimal balance between model complexity and performance.</p>
+
+    <h3>4.5 Performance Heatmap</h3>
+    <p>Figure 5 provides a comprehensive view of performance across different parameters.</p>
+    <div class="figure">
+        <img src="performance_heatmap.png" alt="Performance Heatmap">
+        <div class="figure-caption">Figure 5: Performance heatmap across different configurations</div>
+    </div>
+    <p>The heatmap visualization makes it easy to identify optimal parameter combinations.</p>
+
+    <h3>4.6 Training Time Analysis</h3>
+    <p>Figure 6 shows the computational cost of different configurations.</p>
+    <div class="figure">
+        <img src="training_time.png" alt="Training Time">
+        <div class="figure-caption">Figure 6: Training time comparison</div>
+    </div>
+    <p>Training time is an important consideration for practical applications, especially with larger datasets.</p>
+
+    <h2>5. Key Findings</h2>
+    <ol>
+        <li>Information Gain Ratio (IGR) generally provides the most balanced performance across different datasets</li>
+        <li>Tree depth significantly affects accuracy, with optimal depth varying by dataset</li>
+        <li>Missing value handling using mode replacement works effectively for both numerical and categorical attributes</li>
+        <li>There is a clear trade-off between tree complexity and generalization performance</li>
+        <li>NWIG criterion shows promising results for certain datasets</li>
+    </ol>
+
+    <h2>6. Conclusion</h2>
+    <p>The experimental analysis demonstrates that the implemented decision tree algorithm works effectively across different datasets and configurations. The choice of splitting criterion and tree depth should be based on the specific characteristics of the dataset and the desired balance between accuracy and complexity.</p>
+    
+    <p>The visualizations clearly show the performance patterns and help in making informed decisions about parameter selection. Future work could include implementing pruning techniques to further optimize the trade-off between accuracy and model complexity.</p>
+
+</body>
+</html>

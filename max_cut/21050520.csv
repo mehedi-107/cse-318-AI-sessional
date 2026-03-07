@@ -1,0 +1,7 @@
+Name,|V| or n,|E| or m,Simple Randomized or Randomized-1,Simple Greedy or Greedy-1,Semi-greedy-1,Simple local or local-1 - No. of iterations,Simple local or local-1 - Average value,GRASP-1 - No. of iterations,GRASP-1 - Best value,Known best solution
+G1,800,19176,9643,10956,11202(0.85),5,11374,5,11462(0.75),12078
+G2,800,19176,9565,11030,11277(0.85),5,11391,5,11448(0.9),12084
+G3,800,19176,9601,11012,11214(0.85),5,11375,5,11473(0.95),12077
+G4,800,19176,9587,11031,11238(0.85),5,11411,5,11529(0.95),N/A
+G5,800,19176,9602,10990,11208(0.85),5,11408,5,11488(0.95),N/A
+G6,800,19176,6,1515,1749(0.85),5,1903,5,1993(0.9),N/A

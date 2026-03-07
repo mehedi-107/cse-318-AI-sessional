@@ -1,0 +1,96 @@
+Heuristic function: manhattan distance
+Minimum number of moves: 4
+Number of node expanded: 5
+Number of node explored: 10
+0 1 3 
+4 2 5 
+7 8 6 
+
+1 0 3 
+4 2 5 
+7 8 6 
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Heuristic function: hamming distance
+Minimum number of moves: 4
+Number of node expanded: 5
+Number of node explored: 10
+0 1 3 
+4 2 5 
+7 8 6 
+
+1 0 3 
+4 2 5 
+7 8 6 
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Heuristic function: linear conflict
+Minimum number of moves: 4
+Number of node expanded: 5
+Number of node explored: 10
+0 1 3 
+4 2 5 
+7 8 6 
+
+1 0 3 
+4 2 5 
+7 8 6 
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Heuristic function: euclidean distance
+Minimum number of moves: 4
+Number of node expanded: 5
+Number of node explored: 10
+0 1 3 
+4 2 5 
+7 8 6 
+
+1 0 3 
+4 2 5 
+7 8 6 
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+1 2 3 
+4 5 6 
+7 8 0 
+
